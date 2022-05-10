@@ -1,0 +1,9 @@
+<h1><%= @article.title %></h1>
+<div class="options-bar">
+  <%= link_to "◀ Back", articles_path, class: 'btn btn-light me-3' %>
+  <%= link_to "✏️", edit_article_path(@article), class: 'btn btn-light me-3' %>
+  <%= link_to "🗑️", article_path(@article), method: :delete, data: {confirm: "Are you sure you want to delete #{@article.title}"}, class: 'btn btn-light me-3' %>
+</div>
+
+<br>
+<p><%= @article.content %></p>

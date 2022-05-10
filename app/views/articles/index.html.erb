@@ -1,0 +1,12 @@
+<div class='navigation'>
+  <h1>_Wikinimous</h1>
+  <%= link_to '➕', new_article_path, class: 'btn btn-light me-3' %>
+</div>
+
+<% @articles.each do |article| %>
+  <div class='card-task'>
+    <h3><strong><%= article.title %></strong></h3>
+    <p><%= article.content.slice(0..90) %></p>
+    <%= link_to '', article_path(article), class: 'link-card' %>
+  </div>
+<% end %>

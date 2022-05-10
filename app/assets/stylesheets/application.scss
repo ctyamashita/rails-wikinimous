@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap/scss/bootstrap";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
+
+.link-card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.link-card:hover {
+  background-color: rgba(0,0,0,.3);
+}
+
+.card-task {
+  padding: 8px 16px;
+  margin-top: 16px;
+  background-color: rgba(173, 216, 230, 0.108);
+  position: relative;
+  border-radius: 4px;
+}
+
+body {
+  font-family: monospace;
+  margin: 0 20vw;
+}
+
+.card-task > p {
+  margin-bottom: 0;
+  color: grey;
+}
+
+.card-task > h3 {
+  border-bottom: 1px solid grey;
+
+}
+
+.options-bar {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px solid grey;
+  padding: 16px 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  color: white;
+  background-color: black;
+}
